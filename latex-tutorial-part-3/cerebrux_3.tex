@@ -1,0 +1,170 @@
+\documentclass[a4paper,titlepage,oneside,12pt]{article}
+    \usepackage{fontspec}
+    \usepackage{xunicode}
+    \usepackage{xltxtra}
+    \usepackage{xgreek}
+    \usepackage{graphicx} %πακέτο για εισαγωγή γραφικών
+    \usepackage{hyperref} %πακέτο για εισαγωγή υπερσυνδέσμων
+    \usepackage{fancyhdr} %πακέτο για επικεφαλίδες στις σελίδες
+    \usepackage{multicol} %πακέτο για πολλαπλές στήλες στο κείμενο
+    \usepackage{amsmath}  %πακέτο για την εισαγωγή μαθηματικών συμβόλων
+    \usepackage{multirow} %πακέτο για τη δημιουργία πινάκων
+    \setlength{\columnsep}{1cm} % ορίζουμε την απόσταση μεταξύ των στηλών
+    \parindent=0in  % Ενεργοποιήστε την ακόλουθη γραμμή αν δεν θέλετε στοίχιση στις νέες παραγράφους.
+     
+    \setmainfont[Mapping=tex-text]{GFS Didot}
+    \setlength{\headheight}{15pt}
+    \renewcommand{\figurename}{Εικόνα} %μετονομασία του υποτίτλου της εικόνας
+	\newcommand\blankpage{% Δημιουργία εντολής για την εισαγωγή κενής σελίδας χωρίς αρίθμηση
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+ 
+\title{Cerebrux - Μάθε παιδί μου Linux}
+\author{Οι αναγνώστες μας}
+\pagestyle{fancy}
+ 
+   
+     
+\begin{document}
+\newpage
+\blankpage 
+ 
+\section{Το Λειτουργικό Σύστημα Linux} 
+ 
+\begin{figure} [!hbp]
+\centering
+% Εξασφαλίζουμε το μέγιστο μέγεθος για την εικόνα, χωρίς να χαλάμε τις
+% αναλογίες της. Το αρχείο πρέπει να βρίσκεται στο ίδιο directory
+% με το αρχείο μας.
+\includegraphics[width=1\linewidth]{linux-logo.png} 
+\caption{Λογότυπο του Linux}
+\end{figure}
+ 
+\subsection{Ορισμός}
+\textbf{Τι είναι το Linux;}
+ 
+\textit{Το Linux (Λίνουξ) ή GNU/Linux (Γκνού/Λίνουξ),είναι ένα λειτουργικό σύστημα που αποτελείται από ελεύθερο λογισμικό. Η χρήση του είναι παρόμοια με αυτή του Unix, αλλά όλος ο πηγαίος κώδικας του έχει γραφτεί από την αρχή ως ελεύθερο λογισμικό υπό την ελεύθερη άδεια χρήσης GNU General Public License\footnote{\url{https://el.wikipedia.org/wiki/Linux}}}\\
+Στη συνέχεια του κειμένου μας θα δούμε πως θα κάνουμε ένα δίστηλο, αλλά και πως θα σταματήσουμε τη παρούσα σελίδα προκειμένου να ξεκινήσουμε καινούρια.
+\pagebreak
+ 
+\begin{multicols}{2}
+[
+\section{Πως κάνουμε δίστηλο}
+Εδώ μπορούμε να πούμε λίγα λόγια προτού ξεκινήσουμε το δίστηλο μας]
+Το Linux συχνά προσφέρεται στο χρήστη σε διάφορες διανομές Linux. Χαρακτηριστικό των διανομών είναι η μεγάλη δυνατότητα παραμετροποίησης και επιλογής που προσφέρουν καθώς κάθε μια απευθύνεται σε διαφορετικό τύπο χρηστών. Ανάλογα με την φιλοσοφία που ακολουθεί κάθε διανομή μπορεί να δίνει μεγαλύτερη βάση στη φιλικότητα προς τον χρήστη, στις εφαρμογές πολυμέσων, την ευκολία παραμετροποίησης, απλότητα του συστήματος, μόνο ελεύθερο λογισμικό, χαμηλές απαιτήσεις σε πόρους, και άλλα.
+\end{multicols}
+ 
+Δημιουργός του πυρήνα Linux είναι ο Λίνους Τόρβαλντς, από το όνομα του οποίου
+προήλθε και η ονομασία Linux. O Τόρβαλντς άρχισε να αναπτύσσει ένα αρχικό πυρήνα το 1991
+χρησιμοποιώντας κώδικα από από το ακαδημαϊκό λειτουργικό σύστημα MINIX του Άντριου 
+Τάνενμπάουμ, το οποίο και μετεξέλιξε ανεξάρτητα, και κατόπιν υιοθέτησε τα προγράμματα και βιβλιοθήκες
+του λειτουργικού συστήματος GNU του Ρίτσαρντ Στάλλμαν. Πάνω στον αρχικό πυρήνα του
+Τόρβαλντς έχουν εργαστεί χιλιάδες χρήστες, κοινότητες αλλά και εταιρείες. Λόγω της
+συνύπαρξης του πυρήνα Linux και του συστήματος GNU στο σχηματισμό του Linux ως 
+λειτουργικό σύστημα, συχνά το σύστημα αυτό αναφέρεται ώς GNU/Linux, 
+όπως προτιμά το Ίδρυμα Ελεύθερου 
+Λογισμικού
+ 
+\pagebreak
+\section{Εισαγωγή μαθηματικών συμβόλων}
+\parindent=0in
+Θα δούμε το ανάπτυγμα της ταυτότητας $(a+b)^2$
+\begin{equation}
+(a+b)^2=a^2+2ab+b^2
+\end{equation}
+εν συνεχεία το ανάπτυγμα της $(a-b)^2$
+\begin{equation}
+(a-b)^2=a^2-2ab+b^2
+\end{equation}
+\begin{equation} 
+    \alpha = \beta^2_i + \gamma^2_i 
+\end{equation}
+ 
+\begin{align} 
+    \alpha = \beta\\
+    \gamma = \delta
+\end{align}
+\pagebreak
+\section{minipages}
+
+\subsection{Τι είναι το ubuntu}
+
+\begin{minipage}{.40\linewidth}
+\centering
+  \includegraphics[width=0.85\linewidth]{ubuntu-logo.png}
+
+\end{minipage}
+\begin{minipage}{0.55\linewidth}
+Το Ubuntu (IPA: /u'buntu/) είναι ένα ανοικτού κώδικα,
+ελεύθερο και δωρεάν λειτουργικό σύστημα βασισμένο στον πυρήνα Linux.
+Το όνομά του προέρχεται από την έννοια ubuntu των Ζουλού και Κόσα (Xhosa), που σημαίνει «Είμαι αυτό που είμαι λόγω αυτού που όλοι είμαστε».
+\end{minipage}
+\vspace{12pt}
+
+Το ubuntu χωρίζεται στις εξής κατηγορίες βάσει του γραφικού περιβάλλοντος και του συντηρητή αυτού (maintainer\footnote{\url{https://en.wikipedia.org/wiki/Software_maintainer}})
+\begin{table} [!hbp]
+\centering
+\begin{tabular}{ |l|l|l| }
+\hline
+\multicolumn{3}{ |c| }{\textbf{Διανομές Linux}} \\
+\hline
+\textbf{Όνομα} & \textbf{Γραφικό περιβάλλον} & \textbf{Maintainer} \\ \hline
+\multirow{1}{*}{Ubuntu} & Unity & Canonical \& Κοινότητα \\
+ \hline
+ Kubuntu & KDE & Κοινότητα \\ \hline
+ Xubuntu & XFCE & Κοινότητα \\ \hline
+\multirow{1}{*}{Lubuntu} & LXDE & Κοινότητα \\ \hline
+Ubuntu Gnome & Gnome Shell & Κοινότητα \\ \hline
+Ubuntu Mate & Mate & Κοινότητα \\ \hline
+\end{tabular}
+\caption[Table caption text]{Κατηγορίες Διανομών Ubuntu ανάλογα με το γραφικό περιβάλλον}
+\label{table:name}
+\end{table}
+\pagebreak
+\newpage
+\subsection{Πίνακες μαθηματικών}
+\begin{minipage}{.65\linewidth}
+Στα μαθηματικά, ένας πίνακας είναι μια ορθογώνια διάταξη αριθμών, συμβόλων, ή εκφράσεων, διατεταγμένων σε σειρές και στήλες. 
+Τα μεμονωμένα στοιχεία σε ένα πίνακα ονομάζονται στοιχεία ή εγγραφές του. Ένα παράδειγμα πίνακα 4 γραμμών και 3 στηλών είναι:
+\end{minipage}
+\begin{minipage}{0.33\linewidth}
+
+\[
+  A = 
+  \begin{bmatrix} 
+    x_{11} & x_{12} & x_{13}\\ 
+    x_{21} & x_{22} & x_{23}\\
+    x_{31} & x_{32} & x_{33}\\
+    x_{41} & x_{42} & x_{43}
+  \end{bmatrix}
+\]
+
+\end{minipage}
+\newpage
+\section{Δημιουργία Λιστών}
+\begin{minipage}{0.45\linewidth}
+\subsection{Λίστα με αριθμούς}
+\begin{enumerate}
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+\centering
+\subsection{Λίστα χωρίς αριθμούς}
+\begin{itemize}
+\centering
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\item Κείμενο λίστας
+\end{itemize}
+\end{minipage}
+
+\end{document}
