@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Τι είναι το Ubuntu}{4}{0}{1}
+\beamer@sectionintoc {2}{Μέρος της παρουσίασης}{5}{0}{2}
+\beamer@sectionintoc {3}{Μέρος της παρουσίασης}{6}{0}{3}
+\beamer@sectionintoc {4}{Τέλος της παρουσίασης}{7}{0}{4}
