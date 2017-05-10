@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt]{article}
+    \usepackage{fontspec}
+    \usepackage{xunicode}
+    \usepackage{xltxtra}
+    \usepackage{xgreek}
+    \setmainfont[Mapping=tex-text]{FreeSans}
+    \usepackage{tikz}
+    
+\begin{document}
+Στο παρόν άρθρο θα ασχοληθούμε με τη δημιουργία γραφημάτων με τη χρήση του tikz
+\vspace{10pt}
+
+\begin{tikzpicture}
+\draw (5,0) -- (-5, 0);
+\end{tikzpicture}
+
+\vspace{10pt}
+Πιο σύνθετα μπορούμε να κάνουμε\\
+\vspace{10pt}
+
+\begin{tikzpicture}
+\draw   (5,0) -- (-5, 0)
+        (0,2) -- (0,-2);
+\end{tikzpicture}
+
+\vspace{10pt}
+Πιο σύνθετα μπορούμε να κάνουμε\\
+\vspace{10pt}
+
+\begin{tikzpicture}
+\draw[green, dotted, ultra thick, rotate=15]   
+        (5,0) -- (-5, 0)
+        (0,2) -- (0,-2);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[->](0,0) -- (12,0);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[<<->>](0,0) -- (12,0);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[<<->>, ultra thick, blue](0,0) -- (12,0);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[|->>, thick, red](0,0) -- (12,0);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+\draw[ultra thick]
+(0,0) to [out=75,in=135](7,4);
+\end{tikzpicture}
+
+\end{document}
+
