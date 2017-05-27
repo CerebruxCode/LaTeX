@@ -51,9 +51,15 @@
 
 
 \begin{tikzpicture}
-\draw[ultra thick]
-(0,0) to [out=75,in=135](7,4);
+\draw (0,0) circle (3cm);
+\draw (0,0) ellipse (3cm and 1cm);
+\draw (3,1) arc (0:75:4cm);
 \end{tikzpicture}
+
+\begin{tikzpicture}
+\draw[green,thick,dashed] (2,2) circle (3cm);
+\end{tikzpicture}
+
 
 \end{document}
 
